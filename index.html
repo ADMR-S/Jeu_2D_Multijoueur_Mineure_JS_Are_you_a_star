@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Jeu JS Bubble Tower Rush</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.min.js"></script>
+</head>
+<body>
+  <audio src="https://mainline.i3s.unice.fr/mooc/SkywardBound/assets/sounds/humbug.mp3" id="audioPlayer"></audio>
+  <div id="controls">
+    <label for="nbPlayers">Number of players: </label>
+    <input type="number" min=1 max=4 value=1 id="nbPlayers" oninput="updatePlayerControls(this.value);">
+    <p></p>
+  </div>
+  <div id="scores">
+    <h2>Scores</h2>
+    <ul id="scoreList"></ul>
+  </div>
+  <canvas id="myCanvas" width="900" height="600"></canvas>
+  <div id="fpsContainer"></div>
+
+  <div id="playerControls">
+    <h2>Player Controls</h2>
+    <ul id="controlsList"></ul>
+  </div>
+  <div>
+    <img src="./img/keyboard-codes-alphanum1.png" alt="Keyboard Codes">
+  </div>
+</body>
+<script src="./js/utility.js"></script>
+<script src="./js/shape.js"></script>
+<script src="./js/entity.js"></script>
+<script src="./js/player.js"></script>
+<script src="./js/obstacle.js"></script>
+<script src="./js/obstacleSwamp.js"></script>
+<script src="./js/obstacleMur.js"></script>
+<script src="./js/obstacleElectrifiedWall.js"></script>
+<script src="./js/item.js"></script>
+<script src="./js/timer.js"></script>
+<script src="./js/level.js"></script>
+<script src="./js/game.js"></script>
+<script src="./js/score.js"></script>
+<script src="./js/index.js"></script>
+<script>
+  function updatePlayerControls(nbPlayers) { //Afficher les inputs des joueurs en fonction du nombre de joueurs
+    const controlsList = document.getElementById('controlsList');
+    controlsList.innerHTML = '';
+    for (let i = 1; i <= nbPlayers; i++) {
+      const player = new Player(i);
+      const li = document.createElement('li');
+      li.innerHTML = `Player ${i}:<br>
+                      Up: ${player.commands.up}<br>
+                      Down: ${player.commands.down}<br>
+                      Left: ${player.commands.left}<br>
+                      Right: ${player.commands.right}<br><br>`;
+      controlsList.appendChild(li);
+    }
+  }
+
+  // Initial call to display controls for the default number of players
+  updatePlayerControls(document.getElementById('nbPlayers').value);
+</script>
+</html>

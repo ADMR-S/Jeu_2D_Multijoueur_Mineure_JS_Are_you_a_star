@@ -1,0 +1,40 @@
+
+body {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+#controls, #scores, #playerControls {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
+  border-radius: 10px;
+  font-family: 'Caveat', cursive;
+  margin: 1em auto;
+  width: 80%;
+}
+
+canvas {
+  display: block;
+  margin: 1em auto;
+  border: 5px solid #000;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+img {
+  display: block;
+  margin: 1em auto;
+  max-width: 100%;
+}
