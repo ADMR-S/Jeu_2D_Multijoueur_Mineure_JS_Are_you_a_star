@@ -10,6 +10,9 @@ DEMO
 -----------------------------------------------------------
 JEU
 
+Lien vers le jeu :
+	https://admr-s.github.io/Jeu_2D_Multijoueur_Mineure_JS_Are_you_a_star/
+
 Comment jouer : 
 Le jeu se joue de 1 à 4 joueurs sur un même clavier (les inputs sont affichés sur la page, si l'on ajoute un joueur ses inputs s'affichent).
 Avant d'appuyer sur entrée comme indiqué sur le menu du jeu, choisissez le nombre de joueurs via le champ prévu à cet effet en haut de la page.
