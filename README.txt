@@ -64,6 +64,7 @@ Classes importantes :
 
 	Obstacle
 		La classe dont dérive chaque classe concrète d'obstacles qui a sa propre manière (via la surcharge de la méthode handleCollision) d'interagir avec le joueur.
+
 	Item
 		Les objets qui rebondissent sur les bordures du canvas, les murs et les murs électrifiés
 
