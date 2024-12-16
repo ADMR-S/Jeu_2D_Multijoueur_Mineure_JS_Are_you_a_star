@@ -4,6 +4,8 @@ Devenez vous-même un algorithme de pathfinding !
 Implémenté par Adam MIR-SADJADI
 
 -----------------------------------------------------------
+DEMO
+	https://www.youtube.com/watch?v=pXC8Nn2Xv-4
 
 -----------------------------------------------------------
 JEU
@@ -74,6 +76,7 @@ Classes importantes :
 	Les autres classes ont été mentionnées et n'ont pas besoin d'être abordées en détail (Utility, Score...)
 
 Quelques pistes d'amélioration envisagées et pas encore mentionnées (outre encapsuler certains bouts de code et le rendre plus maintenable) :
+	-Changer les inputs du joueur 2 pour empêcher le scrolling automatique. De même, modifier la div qui contient les scores pour qu'elle ait d'office sa taille finale et ne déplace pas le jeu sur la page quand on le lance (et que les scores des joueurs s'affichent pour la première fois)
 	- Adapter la taille du canva à la taille de l'écran du joueur (deisgn réactif)
 	- Actuellement, la position à laquelle on se trouve à la fin d'un niveau est la position à laquelle on commence le suivant. On pourrait envisager de ne pas faire commencer les joueurs superposés et de faire commencer le premier à être arrivé au niveau précédent plus loin de la sortie que les autres pour rééquilibrer le jeu, ou le faire commencer en tête c'est le cas dans la plupart des jeux de course.
 	- La couleur des items créés est choisie aléatoirement à la création. on pourrait rendre la répartition équitable mais je trouve que l'implémentation actuelle pimente les parties.
